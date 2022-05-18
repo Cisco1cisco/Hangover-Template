@@ -67,14 +67,17 @@ ul {
 /* Start Header */
 
 header {
-    background-color: black;
+    position: fixed;
+    width: 100%;
+    background-color: #343b42;
+    z-index: 9;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 90px;
+    min-height: 65px;
     position: relative;
 }
 
@@ -184,6 +187,76 @@ header nav .icon span {
 
 header nav .icon:hover span {
     background-color: white;
+}
+
+/* End Header */
+
+/* Start Header */
+
+.landing {
+    min-height: 100vh;
+    background-image: url(../photos/landing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.landing .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    color: #ffffffe6;
+}
+
+.landing h1 {
+    font-size: 64px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+@media (max-width: 576px) {
+    .landing h1 {
+        font-size: 50px;
+    }
+}
+
+.landing p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+    .landing p {
+        font-size: 18px;
+    }
+}
+
+.landing a {
+    text-transform: uppercase;
+    background-color: var(--main-color, #54d0dd);
+    display: block;
+    width: fit-content;
+    padding: 15px 25px;
+    margin: 0 auto;
+    color: #414a52;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+}
+
+.landing a:hover {
+    background-color: #414a52;
+    color: var(--main-color, #54d0dd);
 }
 
 /* End Header */
