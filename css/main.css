@@ -97,7 +97,7 @@ h2.main-title::after {
 header {
     position: fixed;
     width: 100%;
-    background-color: var(--alt-color, #343b42);
+    background-color: rgb(52 59 66 / 75%);
     z-index: 9;
 }
 
@@ -144,6 +144,7 @@ header nav ul {
         top: 100%;
         width: 100%;
         flex-direction: column;
+        background-color: rgb(52 59 66 / 75%);
     }
 }
 
