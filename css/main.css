@@ -257,6 +257,12 @@ header nav .icon:hover span {
     }
 }
 
+@media (max-width: 350px) {
+    .landing h1 {
+        font-size: 40px;
+    }
+}
+
 .landing p {
     font-size: 22px;
     margin-bottom: 30px;
